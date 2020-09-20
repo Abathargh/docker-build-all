@@ -14,12 +14,12 @@ If you use the manifest/push features, you have to be logged in with your docker
 docker login
 ```
 
-## Instal and Run
+## Install and Run
 
 ```bash
 go get -u github.com/abathargh/docker-build-all
 
-# you can also clone it an build it manually
+# you can also clone it and build it manually
 git clone https://github.com/Abathargh/docker-build-all
 cd docker-build-all
 go install
@@ -32,5 +32,5 @@ docker-build-all -n abathargh/test
 
 - **-n**, the name of the image, required;
 - **-t**, images are tagged in the name:arch-tag format and name:tag (for manifests), pass a custom tag with -t, defaults to "latest";
-- **-p**, specifies that you want to push after building.
+- **-p**, specifies that you want to push after building;
 - **-m**, specifies that you want to create a manifest that includes every built image after the build phase.
